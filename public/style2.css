@@ -1,0 +1,103 @@
+body {
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas:
+        'hd1'
+        'ph1'
+        'ft1';
+}
+
+#users {
+    padding-top: 20px;
+    display: grid;
+    grid-area: ph1;
+    height: 100vh;
+    grid-template-columns: repeat(auto-fit, minMax(220px, auto));
+    padding-bottom: 20px;
+    /* background: black;
+    border: black;
+    border-radius: 40% */
+}
+#users2 {
+    grid-template-columns: repeat(auto-fit, minMax(150px, auto));
+    padding-bottom: 40px;
+    border-radius: 20%;
+    height: 100%;
+}
+
+#movies{
+    padding-top: 20px;
+    display: grid;
+    grid-area: ph1;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit, minMax(300px, auto));
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+#movies{
+    grid-template-columns: repeat(auto-fit, minMax(350px, auto));
+
+}
+
+.header{
+    display: grid;
+    grid-area: hd1;
+    background: black;
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    height: 100px;
+    
+}
+
+#footer{
+    display: grid;
+    grid-area: ft1;
+    background: black;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    height: 50px;
+
+}
+
+
+@media (max-width: 410px){
+    .header{
+        display: grid;
+        grid-area: hd1;
+        background: black;
+        color: white;
+        font-size: 3em;
+        text-align: center;
+        height: 20%;
+        padding-bottom: 0px;
+    }
+    #users {
+        /* padding-top: 20px; */
+        display: grid;
+        grid-area: ph1;
+        height: 100%;
+        grid-template-columns: repeat(auto-fit, minMax(200px, auto));
+        /* padding-bottom: 20px; */
+        text-align: center;
+    }
+    #movies{
+        /* padding-top: 20px; */
+        display: grid;
+        grid-area: ph1;
+        height: 100%;
+        grid-template-columns: repeat(auto-fit, minMax(200px, auto));
+        /* padding-bottom: 20px; */
+        
+        padding-top: 0px;
+    
+    }
+    #users2 {
+        grid-template-columns: repeat(auto-fit, minMax(50px, auto));
+        /* padding-bottom: 40px; */
+        border-radius: 20%;
+        height: 100%;
+    }
+}

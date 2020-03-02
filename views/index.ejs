@@ -1,0 +1,12 @@
+<%- include ('./partials/head')%>
+    <body>
+        <h1>Register or Login</h1>
+
+        
+        <% if(success.length>0){ %> <%= success %> <%} %><br/>
+        <a id="login" href="/api/users/register">register</a> | <a href="/api/users/login">login</a> |
+        <a href="logout">logout</a>
+        
+        <%- include ('./partials/footer')%>
+    </body>
+</html>

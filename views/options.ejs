@@ -1,0 +1,12 @@
+<%- include ('./partials/head')%>
+    <body>
+        <h1>Choose your API</h1>
+
+        
+        <% if(success.length>0){ %> <%= success %> <%} %><br/>
+        <a id="moviesOption" href="movies">movies</a> | <a href="random">Users</a> |
+        <a href="logout">logout</a>
+        
+        <%- include ('./partials/footer')%>
+    </body>
+</html>
